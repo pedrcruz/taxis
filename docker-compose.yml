@@ -22,3 +22,5 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=challenge
       - POSTGRES_DB=postgres
+    volumes:
+      - ./src/main/resources/csv:/csv

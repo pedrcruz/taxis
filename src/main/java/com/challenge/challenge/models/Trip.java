@@ -31,5 +31,5 @@ public class Trip {
     private Zone pickupZone;
     @ManyToOne
     @JoinColumn(foreignKey = @ForeignKey(name = "trip_dropoff_zone_fkey"), name = "dropoff_zone_id")
-    private Zone dropffZone;
+    private Zone dropoffZone;
 }

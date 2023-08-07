@@ -12,6 +12,7 @@ CREATE TABLE trip
     pickup_zone_id   BIGINT    NOT NULL,
     dropoff_datetime timestamp NOT NULL,
     dropoff_zone_id  BIGINT    NOT NULL,
+    type             INT4      NOT NULL,
     PRIMARY KEY (id)
 );
 

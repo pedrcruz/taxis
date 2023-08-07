@@ -1,6 +1,7 @@
 package com.challenge.challenge.models;
 
 
+import com.challenge.challenge.enums.TripType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -24,10 +25,11 @@ public class Trip {
     LocalDateTime pickupDatetime;
     LocalDateTime dropoffDatetime;
 
+    TripType type;
     @ManyToOne
     @JoinColumn(foreignKey = @ForeignKey(name = "trip_pickup_zone_fkey"), name = "pickup_zone_id")
-    private Zone pickUpZone;
+    private Zone pickupZone;
     @ManyToOne
     @JoinColumn(foreignKey = @ForeignKey(name = "trip_dropoff_zone_fkey"), name = "dropoff_zone_id")
-    private Zone dropoffZoneId;
+    private Zone dropffZone;
 }
